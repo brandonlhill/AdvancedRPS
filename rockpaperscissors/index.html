@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+      <title>RPS Game</title>
+      <!-- Link CSS here -->
+      <link type='text/css' rel='stylesheet' href='css/style.css' />
+  </head>
+  <body>
+      <div class="jumbotron-fluid colorBLUE">
+        <h1 class="titleJumbo"> Rock<span id="blueColorSpanTitle">-</span>Paper<span id="blueColorSpanTitle">-</span>Sissors</h1>
+      </div>
+      <div class="inputDesigner">
+        <p id="userAlert"> </p>
+        <input id="input1"><br><br>
+        <button class="btn" id="shoot">-Shoot!-</button>
+      </div>
+      <div class="row row2">
+        <div class="col-sm-4">
+          <p class="designer"> User Choice</p>
+          <p class="design" id="score1"></p>
+          <p id="userChoice"></p>
+        </div>
+        <div class="col-sm-4"> 
+          <p class="designer"> Winner</p>
+          <p id="winner"></p>
+        </div>
+        <div class="col-sm-4"> 
+          <p class="designer"> AI Choice</p>
+          <p class="design" id="score3"></p>
+          <p id="computerChoice"></p>
+        </div>
+      </div>
+      <div class="row paddingRow">
+        <div class="col-sm-4 leftGUI">
+          <div class="btn-group-vertical">
+            <button  id="three" class="btn btn-primary buttonsLeft">3</button>
+            <button  id="six" class="btn btn-primary buttonsLeft">6</button>
+            <button  id="nine" class="btn btn-primary buttonsLeft">9</button>
+            <button  id="reset" class="btn btn-primary buttonsLeft">CLR</button>
+          </div>
+        </div>
+        <div class="col-md-4"><p class="rules"><span id="blueColorSpanTitle">-</span> How To Play! <span id="blueColorSpanTitle">-</span></p>
+          <p class="sizecontrol"> I. <span class="sizecontrolInner">Put a choice into the input bar above</span></p>
+          <p class="sizecontrol"> II. <span class="sizecontrolInner">Click Shoot</span></p>
+          <p class="sizecontrol"> III. <span class="sizecontrolInner">Win! or lose, the score will be counted!</span></p>
+          <p class="sizecontrol"> IV.<span class="sizecontrolInner"> The buttons to the left allow for a choice to be randomly choosen the stated ammount of times</span></p>
+        </div>
+        <div class="col-sm-4"></div>
+      </div>
+      <!-- Link JQuery here -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <!-- Link script.js here -->
+    <script src='js/script.js'></script>
+  </body>
+</html>

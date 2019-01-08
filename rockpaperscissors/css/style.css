@@ -1,0 +1,92 @@
+body, main, body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Varela Round', sans-serif;
+  /* display:inline; */
+}
+html, body, main {
+  height: 100%;
+  /* background: #34495e; */
+   background-color: #f7f9f9;
+}
+
+p{
+    text-align: center;
+    color:grey;
+    font-size: 2.5em;
+}
+#blueColorSpanTitle{
+    color:lightblue;
+    font-size: 28px;
+}
+.titleJumbo{
+    padding-top:50px;
+    text-align:center;
+    color: white;
+}
+#userChoice{
+    text-align:center;
+    color:#38B0DE;
+}
+#winner{
+    text-align:center;
+    color:lightGreen;
+}
+#computerChoice{
+    text-align:center;
+    color:#38B0DE;
+}
+.designer{
+    text-decoration:underline;
+    font-size:25px;
+    opacity:0.9;
+}
+.row2{
+    padding-top:30px;
+}
+.inputDesigner{
+    text-align:center;
+}
+#shoot{
+    
+}
+.rules{
+    font-size:20px;
+    padding-top:100px;
+    
+}
+.sizecontrol{
+    font-size:20px;
+    text-align:left;
+}
+.design{
+    text-align:center;
+    font-size: 20px;
+    margin:0 auto;
+}
+.paddingRow{
+    padding-top:100px;
+}
+.jumbotron-fluid{
+    background-color:#4286f4;
+    height:250px;
+    width:100%;
+}
+.buttonsLeft{
+    background-color:#4286f4;
+    border-bottom-color:white important;
+    z-index: 99;
+    opacity: 0.8;
+    position:inherit;
+}
+#userAlert{
+    color:#4286f4;
+    font-size:18px;
+}
+.sizecontrolInner{
+    font-size:18px;
+}
