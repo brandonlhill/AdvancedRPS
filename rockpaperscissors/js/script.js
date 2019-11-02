@@ -1,7 +1,8 @@
 /* global $ */
-// *************************** YOUR CODE BELOW *******************************
-//******************TEST EARLY AND OFTEN USING console.log() ******************
-//****************** SERIOUSLY TEST USING console.log()!!! ******************
+//******************** BrandonHill.org **********************
+//******* https://github.com/brandonlhill/AdvancedRPS *******
+//****** Highschool Class Project Build ~April 12, 2017 *****
+//**************** Updated November 01, 2019 ****************
 
 //GLOBAL VARIABLES
 var RPS= ["rock","paper","scissors"];
@@ -16,29 +17,29 @@ $("#shoot").click(function(){
 });
 $(document).keypress(function(e){
     if(e.which == 13) {
-        console.log("enter had been pushed");
+        console.log("Enter Pressed");
         Overall();
     }
 });
 console.log(scoreuser);
-//this is the logic for the the webpage game!
+//Overall(): Supports game logic
 function Overall(){
-    console.log("Shoot had took place");
+    console.log("Ran Game");
     var random = Math.floor(Math.random() * RPS.length);
 
-    var userinput= $("#input1").val();
+    var userinput = ($("#input1").val()).toLowerCase();;
     $("#userChoice").text(userinput);
     $("#computerChoice").text(RPS[random]);
     
     console.log(userinput);
     if(userinput !== "rock"&& userinput !== "scissors" && userinput !== "paper"){
-        alert("User you have input something that was not [Rock,Paper,or Scissors]");
+        alert("Note: Please use one of the following options: Rock,Paper,or Scissors.");
         $("#userChoice").text("");
         $("#computerChoice").text("");
         $("#winner").text("");
     }
     else if(userinput === RPS[random]){
-        $("#winner").text("There has been a Tie!");
+        $("#winner").text("User & Computer Tie!");
         scoreuser++;
     }
     
@@ -57,27 +58,25 @@ function Overall(){
      else{
         $("#winner").text("Computer Wins!");
         scorecomp++;
-        
      }
     $("#score1").text("Score: "+ scoreuser);  
     $("#score3").text("Score: "+ scorecomp);  
 }
-    console.log("Comp Score= " + scorecomp);
+    console.log("Computer Score= " + scorecomp);
     console.log("User Score= " + scoreuser);
 //button 3    
 $("#three").click(function(){
     scoreuser=0;
     scorecomp=0;
     counter = 3;
-    console.log(counter);
+    //console.log(counter);
     if($("#input1").val() === ""){
-        console.log("this works fine like a cool summer day stuck in this sutpid office");
-        $("#userAlert").text("You need to out a command into the input box").fadeOut(4000);
+        $("#userAlert").text("Note: Please type rock, paper, or scissors in the inputbox.").fadeOut(4000);
     }    
     else{
     for(var i = 0; i < counter; i++){
         Overall();
-        console.log("This should run this many times ");
+        console.log("The game will run " + counter + "times");
     }
     }
 });
@@ -86,15 +85,14 @@ $("#six").click(function(){
     scoreuser=0;
     scorecomp=0;
     counter = 6;
-    console.log(counter);
+    //console.log(counter);
     if($("#input1").val() === ""){
-        console.log("this works fine like a cool summer day stuck in this sutpid office");
-        $("#userAlert").text("You need to out a command into the input box").fadeIn().fadeOut(2200);
+        $("#userAlert").text("Note: Please type rock, paper, or scissors in the inputbox.").fadeIn().fadeOut(2200);
     }    
     else{
     for(var i = 0; i < counter; i++){
         Overall();
-        console.log("This should run this many times " + counter);
+        console.log("The game will run " + counter + "times");
     }
     }
 });
@@ -105,13 +103,12 @@ $("#nine").click(function(){
     counter = 9;
     console.log(counter);
     if($("#input1").val() === ""){
-        console.log("this works fine like a cool summer day stuck in this sutpid office");
-        $("#userAlert").text("You need to out a command into the input box").fadeIn().fadeOut(2200);
+        $("#userAlert").text("Note: Please type rock, paper, or scissors in the inputbox.").fadeIn().fadeOut(2200);
     }    
     else{
     for(var i = 0; i < counter; i++){
         Overall();
-        console.log("This should run this many times ");
+        console.log("This game will run " + counter + "times");
     }
     }
 });
