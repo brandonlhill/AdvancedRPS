@@ -5,7 +5,7 @@ Stylish Rock, Paper, Scissors Game built with JavaScript (JQuery).
 ## How to Deploy?
   * I. Download the AdvancedRPS file.
   * II. unzip the file.
-  * III. Enter the file and you should ses a index.html file.
+  * III. Enter the file and you should see an index.html file.
   * IV. You can open game by double clicking the index.html or running a simple http server host. 
 
 ## How To Play: 
