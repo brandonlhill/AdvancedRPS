@@ -6,7 +6,7 @@ Stylish Rock, Paper, Scissors Game built with JavaScript (JQuery).
   * I. Download the AdvancedRPS file.
   * II. unzip the file.
   * III. Enter the file and you should see an index.html file.
-  * IV. You can open game by double clicking the index.html or running a simple http server host. 
+  * IV. You can open the game by double clicking the index.html or running a simple http server host. 
 
 ## How To Play: 
   * I. Put a choice into the input bar.
